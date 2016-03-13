@@ -41,5 +41,5 @@ runners <- c(runners, "cheltenham", "cheltfest", "ladbrokes", "paddypower",
 file_name <- paste0("../data/", today, ".json")
 filterStream(file.name = file_name,
              track = runners,
-             timeout = 25,
+             timeout = 25200,
              oauth = my_oauth)
