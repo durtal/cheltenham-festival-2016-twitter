@@ -3,6 +3,7 @@ library(streamR)
 library(magrittr)
 library(timeformR)
 
+readRenviron("~/.Renviron") # slightly curious why I needed to do this?
 load("../data/my_auth.RData")
 
 # login in
