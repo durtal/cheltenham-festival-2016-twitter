@@ -4,3 +4,4 @@
 .Ruserdata
 data/my_auth.RData
 data/*.json
+R/*.Rout
