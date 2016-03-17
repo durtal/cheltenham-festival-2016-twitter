@@ -40,7 +40,12 @@ runners <- c(runners, "cheltenham", "cheltfest", "ladbrokes", "paddypower",
 # collect tweets
 # create file name
 file_name <- paste0("../data/", today, ".json")
-filterStream(file.name = file_name,
-             track = runners,
-             timeout = 25200,
-             oauth = my_oauth)
+current_time <- Sys.time()
+end_time <- current_time + 30
+while(current_time <= end_time) {
+    filterStream(file.name = file_name,
+                 track = runners,
+                 timeout = 10,
+                 oauth = my_oauth)
+    current_time <- Sys.time()
+}
